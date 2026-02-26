@@ -327,6 +327,62 @@ input::placeholder {
     padding-left: 10px;
 }
 
+
+/* teammate */
+.team-container{
+display: flex;
+flex-direction: column;
+ width: 80%;
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+ margin: 0 auto;
+}
+.team-title{
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+.team-description{
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+}
+.teammates{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color:#222222;
+    padding: 50px 20px 0px 70px;
+}
+.members{
+    width: 90%; 
+    height: 75%;
+}
+
+.member{
+    width: 100%; 
+    height: 100%;
+    border-radius: 8px;
+    
+
+}
+.info{
+    text-align: start;
+    position: relative;
+    top: -100px;
+    left: 30px;
+    
+}
+.info-name{
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-bottom: 0px;
+}
+.info-title{
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
 @media screen and (max-width:576px) {
 
     .banner,
@@ -362,6 +418,9 @@ input::placeholder {
     }
     .form-container{
         padding: 50px;
+    }
+    .teammates{
+        grid-template-columns: repeat(1,1fr);
     }
 
 }
