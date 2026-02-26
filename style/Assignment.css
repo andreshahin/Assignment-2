@@ -206,6 +206,7 @@ body {
     background-color: #222222;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
 
 }
 
@@ -229,6 +230,42 @@ body {
 .run-description {
     font-weight: 400;
     font-size: 0.9rem;
+}
+
+/* food section */
+.food {
+    background-color: #222222;
+    width: 80%;
+    margin: 60px auto;
+
+    border-radius: 8px;
+
+}
+
+.food-container {
+    align-items: center;
+    margin: 30px auto;
+    justify-content: space-evenly;
+}
+
+.food-rule {
+    width: 40%;
+    margin-left: 150px;
+}
+
+.food-title {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.food-description {
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.food-image {
+    width: 70%;
+    border-radius: 8px;
 }
 
 
@@ -312,14 +349,17 @@ form input {
     margin-bottom: 10px;
 
 }
-.value{
+
+.value {
     height: 30px;
-    
+
 }
+
 .select {
     width: 81.5%;
     height: 30px;
 }
+
 input::placeholder {
     color: white;
     font-weight: 500;
@@ -329,64 +369,122 @@ input::placeholder {
 
 
 /* teammate */
-.team-container{
-display: flex;
-flex-direction: column;
- width: 80%;
- text-align: center;
- align-items: center;
- justify-content: center;
- margin: 0 auto;
+.team-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
-.team-title{
+
+.team-title {
     font-weight: 800;
     font-size: 3rem;
     margin-bottom: 0px;
 }
-.team-description{
+
+.team-description {
     font-weight: 400;
     font-size: 0.9rem;
     margin-bottom: 40px;
 }
-.teammates{
+
+.teammates {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    background-color:#222222;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #222222;
     padding: 50px 20px 0px 70px;
 }
-.members{
-    width: 90%; 
+
+.members {
+    width: 90%;
     height: 75%;
 }
 
-.member{
-    width: 100%; 
+.member {
+    width: 100%;
     height: 100%;
     border-radius: 8px;
-    
+
 
 }
-.info{
+
+.info {
     text-align: start;
     position: relative;
     top: -100px;
     left: 30px;
-    
+
 }
-.info-name{
+
+.info-name {
     font-weight: 800;
     font-size: 1.25rem;
     margin-bottom: 0px;
 }
-.info-title{
+
+.info-title {
     font-weight: 400;
     font-size: 0.9rem;
+}
+
+
+/* footer */
+footer {
+    background-color: #222222;
+    margin-top: 80px;
+}
+
+.footer-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+}
+
+.motivation-description {
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.motivation-name {
+    font-weight: 800;
+    font-size: 4.25rem;
+    color: #E6533C;
+}
+
+.started-name {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.started-service {
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.borderline {
+    border: 0.1px solid rgba(255, 255, 255, 0.1);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.endline {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
 }
 
 @media screen and (max-width:576px) {
 
     .banner,
-    .run ,.calculator {
+    .run,
+    .calculator,
+    .food-container,
+    .footer-container {
         flex-direction: column;
     }
 
@@ -416,11 +514,27 @@ flex-direction: column;
     .run img {
         width: 80%;
     }
-    .form-container{
+
+    .form-container {
         padding: 50px;
     }
-    .teammates{
-        grid-template-columns: repeat(1,1fr);
+
+    .teammates {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-container {
+        margin-left: 30px;
+    }
+    .food-rule{
+        margin-left: 20px; 
+    }
+    .food-rule {
+        width: 90%;
+    }
+    .food-image{
+        margin-left: 47px;
+        width: 75%;
     }
 
 }
